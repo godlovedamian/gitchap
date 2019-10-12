@@ -1,0 +1,24 @@
+{
+  "name": "gitchap",
+  "version": "1.0.0",
+  "description": "A CLI dev tool to automate git workflow initialization process for new and existing projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/O1OOO111/gitchap.git"
+  },
+  "keywords": [
+    "node",
+    "git",
+    "cli"
+  ],
+  "author": "Godlove Damian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/O1OOO111/gitchap/issues"
+  },
+  "homepage": "https://github.com/O1OOO111/gitchap#readme"
+}
