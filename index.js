@@ -71,7 +71,7 @@ gitchap
     })
 
 gitchap
-    .command('octocheck')
+    .command('check-credentials')
     .description('Checks user Github credentials')
     .action(async () => {
         let token = github.getStoredGithubToken();
