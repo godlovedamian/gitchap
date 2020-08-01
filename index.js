@@ -74,12 +74,16 @@ gitchap
     .command('check-credentials')
     .description('Checks user Github credentials')
     .action(async () => {
-        let token = github.getStoredGithubToken();
-        if (!token) {
-            await github.setGithubCredentials();
-            token = await github.registerNewToken();
+        try {
+            let token = github.getStoredGithubToken();
+            if (!token) {
+                await github.setGithubCredentials();
+                token = await github.registerNewToken();
+            }
+            console.log(token);
+        }catch (error) {
+            console.error(error)
         }
-        console.log(token);
     })
 
 gitchap.parse(process.argv)
