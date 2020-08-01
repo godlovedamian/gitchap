@@ -28,7 +28,7 @@ gitchap
     });
 
 gitchap
-    .command('create_repo')
+    .command('create-repo')
     .description('Creates a new repository on Github')
     .action(async () => {
         const getGithubToken = async () => {
